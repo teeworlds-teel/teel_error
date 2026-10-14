@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+# If teel_error ever gets a PUBLIC dependency, re-find it here, e.g.:
+# find_dependency(Threads)
+
+include("${CMAKE_CURRENT_LIST_DIR}/teel_errorTargets.cmake")
+
+check_required_components(teel_error)
